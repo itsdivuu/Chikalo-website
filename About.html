@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./web.css">
+    <script src="https://kit.fontawesome.com/543d66cc47.js" crossorigin="anonymous"></script>
+    <title>Chikalo</title>
+    <style>
+        .about{
+            border: 2px solid white;
+            margin: 100px;
+            width: 90%;
+            box-shadow: 15px 15px 60px 15px whitesmoke;
+            background-color:azure;
+            color: navy;
+            display: flex;
+        }
+      .about img{
+        height: 400px;
+        margin: 20px;
+        border-radius: 50px;
+      }
+      .about .abdetails{
+        display: inline-block;
+      }
+      .about .abdetails h1{
+        margin-left: 420px;
+        margin-top: 10px;
+        font-size: 40px;
+        font-family: fantasy;
+      }
+      .about .abdetails h3{
+        margin-left: 420px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: cursive;
+      }
+      .about .abdetails p{
+        margin-left: 150px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: cursive;
+      }
+      @media (max-width:700px){
+        .about{
+            border: 2px solid white;
+            margin: 50px;
+            width: 90%;
+            display:inline-flex;
+        }
+        .about img{
+            height: 140px;
+            margin: 20px;
+            border-radius: 50px;
+        }
+        .about .abdetails{
+            display: inline-block
+        }
+        .about .abdetails h1{
+            margin-left: 40px;
+            font-size: 30px;
+        }
+        .about .abdetails h3{
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .about .abdetails p{
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="toggle-btn"onclick="myfunc();">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="./image/logo.png"><h1 class="logo">Chikalo</h1>
+        <nav id ="nav">
+            <ul>
+                <li><a href="./web.html">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="#"onclick="document.getElementById('id02').style.display='block'">Sign In</a></li>
+                <li><a href="#"onclick="document.getElementById('id01').style.display='block'">Log in</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./image/img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+      <div id="id02" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./image/img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Email Id</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw"><b>Reset Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+      
+    <div class="about">
+        <img src="./image/about.jpg">
+        <div class="abdetails">
+            <h1>CHIKALO</h1>
+            <h3>ABOUT US</h3>
+            <p>
+                Welcome to Chikalo!We aim to offer our customers a variety of the latest 
+                prducts fdor shopping which is now on trending. We’ve come a long way, so we know exactly which direction 
+                to take when supplying you with high quality yet budget-friendly products. 
+                We offer all of this while providing excellent customer service and friendly support.
+                We always keep an eye on the latest trends in [PRODUCTS] and put our 
+                customers’ wishes first. That is why we have satisfied customers all over the world, 
+                and are thrilled to be a part of the [PRODUCTS] industry.
+                The interests of our customers are always top priority for us, so we hope you will enjoy 
+                our products as much as we enjoy making them available to you.
+            </p>
+        </div>
+    </div>
+     <script src="./web.js"></script>
+</body>
+</html>

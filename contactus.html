@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./cn.css">
+    <script src="https://kit.fontawesome.com/543d66cc47.js" crossorigin="anonymous"></script>
+    <title>Chikalo</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="toggle-btn"onclick="myfunc();">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="./image/logo.png"><a href ="./web.html"><h1 class="logo">Chikalo</h1></a>
+    </div>
+
+    
+
+    <div class="login">
+        <img src="./image/about.jpg">
+        <div class="logindetails">
+            <h1>Contact Us</h1><br/>
+            <form method="post">  
+                <label for="Name">Name :</label>
+                <input type="text" name="Name"placeholder="name"required/><br/>
+                <label for="email-id">Email :</label>
+                <input type="email" name="email"placeholder="email id"required/><br/>
+                <label for="phone-no">Phone :</label>
+                <input type="tel" name="phone"placeholder="phone no"required/><br/>
+                <label for="message">Message :</label>
+                <textarea name="message" placeholder="message"required></textarea><br/>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./web.js"></script>
+</body>
+</html>

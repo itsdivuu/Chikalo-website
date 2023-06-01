@@ -1,0 +1,508 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-image: url(./image/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+.navbar{
+    background-color: rgba(31,31,31,255);
+    padding: 10px 60px;
+    color: white;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: 700;
+    width: 100%;
+    height: auto; 
+    display: inline-block;
+    position: relative;
+}
+.navbar nav{
+    margin-left:200px ;
+    margin-top: 15px;
+    float: right;
+}
+.navbar ul li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    color: beige;
+}
+.navbar a{
+    color:beige;
+    text-decoration: none;
+    font-family: cursive;
+    margin-left: 80px;
+}
+.navbar a:hover{
+   background-color: yellowgreen;
+   color: black;
+}
+.navbar img{
+    width: 100px;
+}
+.navbar .logo{
+    font-size: 50px;
+    display: inline;
+    font-family: fantasy;
+}
+.toggle-btn{
+    position: absolute;
+    width: 35px;
+    top: 40px;
+    right: 20px;
+    display: none;
+}
+.toggle-btn span{
+    background-color: azure;
+    width: 100%;
+    height: 2px;
+    float: left;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.mq{
+   height: auto;
+   margin-top: 10px;
+   background-color: navy;
+   font-size: 30px;
+   font-family: cursive;
+}
+.products{
+    display: flex;
+    width: 100%;
+    margin: 60px;
+}
+.img-products{
+    width: 500;
+    height: 100%;
+    border: 2px solid white;
+    background-color: aliceblue;
+    color: navy;
+    padding: 20px 20px;
+    margin-left: 60px;
+    box-shadow: 15px 15px 40px 10px rgba(105, 180, 243, 0.9);
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+.img-products .shopping{
+    height: 30rem;
+    width: 20rem;
+    border: 2px solid black; 
+}
+.img-products:hover{
+    box-shadow: 20px 20px 50px 15px grey;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+.dis{
+    color: green;
+    font-size: 30px;
+}
+.co{
+    color: blueviolet;
+    text-align: end;
+    font-size: 30px;
+    font-family: fantasy;
+}
+.sale{
+    width: 93%;
+    height: 200px;
+    text-align: center;
+    background-color: azure;
+    color: navy;
+    padding: 50px;
+    margin: 40px;
+    font-size: large;
+    font-variant: small-caps;
+}
+.img-styling{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+}
+.img-styling-container{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.img-styling-item{
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 40px;
+    background:linear-gradient(whitesmoke,rgba(105, 180, 243, 0.9));
+}
+.img-styling-item .shopping{
+    height: 25rem;
+    width: 30rem;
+    border: 2px solid black; 
+}
+.img-styling-item p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    font-variant: small-caps;
+    margin-top: 50px;
+}
+.img-slider{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid whitesmoke;
+    width: 1880px;
+    height: 1000px;
+    position: relative;
+    background-image: url(./image/slider-3.jpg);
+    background-size: cover;
+    animation: slider 15s infinite linear;
+}
+@keyframes slider{
+    0%{
+        background-image: url(./image/slider-4.jpg);
+    }
+    35%{
+        background-image: url(./image/slider-5.jpg);
+    }
+    75%{
+        background-image: url(./image/slider-2.jpg);
+    }
+}
+footer{
+    margin-top: 50px;
+    width: 100%;
+    background:linear-gradient(rgb(5, 114, 210),white);
+    color: navy;
+    padding: 60px 0 30px;
+    border-top-left-radius: 200px;
+    font-size: 20px;
+}
+.row{
+    width:85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.col pre{
+    margin-left: -210px;
+}
+.col h1{
+    margin-bottom: 20px;
+    font-variant: small-caps;
+    font-family:fantasy;
+    letter-spacing: 1.5px;
+    width:fit-content;
+}
+.col a{
+    color:navy;
+    text-decoration: none;
+}
+.col a:hover{
+   background-color: navy;
+   color: navajowhite;
+}
+.email-id{
+    width:fit-content;
+    border-bottom: 1px solid navy;
+    margin:  20px 0px;
+    cursor: pointer;
+}
+.ws{
+    cursor: pointer;
+    margin: 20px 0px;
+}
+.mr{
+    margin: 7px 0px;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.row ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.for{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid navy;
+    margin-bottom: 50px;
+}
+.for .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.for input{
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+}
+.for button{
+    background: transparent;
+    border: 0;
+    outline:none;
+    cursor: pointer;
+}
+.for button .fas{
+    font-size: 16px;
+    color:navy;
+}
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: navy;
+    background: transparent;
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px  solid navy;
+    margin: 20px auto;
+}
+.copyrights{
+    text-align: center;
+}
+@media (max-width:700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+    .copyrights{
+        text-align: center;
+    }
+    .col pre{
+        margin-left: -180px;
+    }
+}
+@media (max-width:990px) {
+    .toggle-btn{
+        display: block;
+    }
+   nav{
+    display: none;
+    width: 100%;
+    border-top:2px groove white;
+    padding-top: 20px;
+    margin-top: 30px;
+   }
+   nav.show{
+    display: block;
+   }
+   nav ul li{
+    padding: 15px 0px;
+    width: 100%;
+   }
+   nav ul li:hover{
+    background-color: yellowgreen;
+   }
+   .img-styling{
+    display: inline-block;
+    width: 90%;
+    margin: 10px;
+    }
+    .img-styling-container{
+    margin-right: 10px;
+    margin-left: 10px;
+    }
+    .img-styling-item{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    padding: 25px;
+    margin: 15px;
+    }
+    .img-styling-item .shopping{
+    display: inline-block;
+    height: 80%;
+    width: 100%;
+    border: 2px solid black; 
+    }
+    .img-slider{
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 0px;
+        border: 2px solid whitesmoke;
+        width:95%;
+        height: 450px;
+        position: relative;
+        background-image: url(./image/slider-3.jpg);
+        background-size: 100%;
+        animation: slider 15s infinite linear;
+    }
+    .products{
+        display: inline-block;
+        width: 90%;
+        margin: 10px;
+    }
+    .img-products{
+        margin-top:30px;
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    .img-products .shopping{
+        display: inline-block;
+        height: 80%;
+        width: 100%;
+        border: 2px solid black; 
+    }
+    .sale{
+        width: 85%;
+    height: 220px;
+    text-align: center;
+    background-color: azure;
+    color: navy;
+    padding: 50px;
+    margin: 40px;
+    font-size: large;
+    font-variant: small-caps;
+    }
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  b{
+    color: navy;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    margin-top: 30px;
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    color: red;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }

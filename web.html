@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./web.css">
+    <script src="https://kit.fontawesome.com/543d66cc47.js" crossorigin="anonymous"></script>
+    <title>Chikalo</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="toggle-btn"onclick="myfunc();">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="./image/logo.png"><h1 class="logo">Chikalo</h1>
+        <nav id ="nav">
+            <ul>
+                <li><a href="./web.html">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="#"onclick="document.getElementById('id02').style.display='block'">Sign In</a></li>
+                <li><a href="#"onclick="document.getElementById('id01').style.display='block'">Log in</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./image/img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+      <div id="id02" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./image/img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Email Id</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw"><b>Reset Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    <div class="img-slider">
+    </div>
+
+    <marquee class="mq"scrollamount="20"> Welcome to the Chikalo!!
+                So As this is a shopping website
+                as there are various option for shopping.
+                you can go through the shopping and 
+                visiting our site and making Fun.❤️
+                Currently you can having a discount 
+                by buy one get one free!!😍
+                Exiting !! Right !!Here are more excited products with the minimum price😍</marquee>
+    
+    <div class="sale">
+        <h1>TRENDING🕊️</h1>
+            <p>EXITING PRICES WAITING FOR YOU !</p>
+            <p>SCROLLING!! SCROLLING!! AND SCROLLING!!</p>
+    </div>
+
+
+    <div class="products">
+        <div class="img-products">
+            <img src="./image/dress-1.jpg" class="shopping">
+            <h1>Barbie Dress</h1>
+            <p>₹250 &nbsp;&nbsp;<del>₹650</del></p>
+            <p class="dis">40% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/dress-2.jpg" class="shopping">
+            <h1>Middi</h1>
+            <p>₹450 &nbsp;&nbsp;<del>₹550</del></p>
+            <p class="dis">10% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/dress-3.jpg" class="shopping">
+            <h1>Lahenga</h1>
+            <p>₹1500 &nbsp;&nbsp;<del>₹2050</del></p>
+            <p class="dis">60% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/dress-4.jpg" class="shopping">
+            <h1>Blakish Gown</h1>
+            <p>₹1200 &nbsp;&nbsp;<del>₹1500</del></p>
+            <p class="dis">30% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+    </div>
+    
+    <div class="products">
+        <div class="img-products">
+            <img src="./image/dress-5.jpg" class="shopping">
+            <h1>Anarkali Dress</h1>
+            <p>₹950 &nbsp;&nbsp;<del>₹1200</del></p>
+            <p class="dis">20% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/dress-6.jpg" class="shopping">
+            <h1>flery suit</h1>
+            <p>₹700 &nbsp;&nbsp;<del>₹950</del></p>
+            <p class="dis">25% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/babygirl.jpg" class="shopping">
+            <h1>Barbie Dress</h1>
+            <p>₹950 &nbsp;&nbsp;<del>₹1250</del></p>
+            <p class="dis">20% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/dress-7.jpg" class="shopping">
+            <h1>blendy Trouser</h1>
+            <p>₹950 &nbsp;&nbsp;<del>₹1250</del></p>
+            <p class="dis">20% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+    </div>
+    
+    <div class="sale">
+        <h1>💥 SALE SALE SALE 💥</h1>
+        <h4>BUY 1 GET ONE FREE</h4>
+        <p>EXITING PRICES WAITING FOR YOU !</p>
+        <p>SCROLLING!! SCROLLING!! AND SCROLLING!!</p>
+    </div>
+
+    <div class="products">
+        <div class="img-products">
+            <img src="./image/bb1.jpg" class="shopping">
+            <h1>Perfumes combo</h1>
+            <p>₹400 &nbsp;&nbsp;<del>₹750</del></p>
+            <p class="dis">5% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/bb2.jpg" class="shopping">
+            <h1>Kurti Combo</h1>
+            <p>₹600 &nbsp;&nbsp;<del>₹850</del></p>
+            <p class="dis">20% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/bb3.jpg" class="shopping">
+            <h1>Bro & Grls Combo</h1>
+            <p>₹800 &nbsp;&nbsp;<del>₹650</del></p>
+            <p class="dis">20% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/bb4.jpg" class="shopping">
+            <h1>Couples Combo</h1>
+            <p>₹700 &nbsp;&nbsp;<del>₹900</del></p>
+            <p class="dis">15% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+    </div>
+    
+    <div class="products">
+        <div class="img-products">
+            <img src="./image/bb5.jpg" class="shopping">
+            <h1>Photo Frames</h1>
+            <p>₹550 &nbsp;&nbsp;<del>₹700</del></p>
+            <p class="dis">15% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/bb6.jpg" class="shopping">
+            <h1>Watch Combo</h1>
+            <p>₹900 &nbsp;&nbsp;<del>₹1100</del></p>
+            <p class="dis">25% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/bb7.jpg" class="shopping">
+            <h1>Jeans Combo</h1>
+            <p>₹1050 &nbsp;&nbsp;<del>₹1550</del></p>
+            <p class="dis">40% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+        <div class="img-products">
+            <img src="./image/bb8.jpg" class="shopping">
+            <h1>Sarree Combo</h1>
+            <p>₹950 &nbsp;&nbsp;<del>₹1250</del></p>
+            <p class="dis">20% Discount</p>
+            <p class="co">Chikalo</p>
+        </div>
+    </div>
+
+    <div class="sale">
+        <h1>LATEST COLLECTIONS ❤️</h1>
+        <p>EXITING PRICES WAITING FOR YOU !</p>
+        <p>we have currently 6 sections for shopping</p>
+        <p>SCROLLING!! SCROLLING!! AND SCROLLING!!</p>
+    </div>
+    
+    <div class="img-styling">
+        <div class="img-styling-container">
+            <div class="img-styling-item">
+                <img src="./image/baby.jpg" alt=""class="shopping">
+                <p>Baby Girl Section</p>
+            </div>
+        </div>
+
+        <div class="img-styling-container">
+            <div class="img-styling-item">
+                <img src="./image/girls.jpg" alt=""class="shopping">
+                <p>Womens Section</p>
+            </div>
+        </div>
+
+        <div class="img-styling-container">
+            <div class="img-styling-item">
+                <img src="./image/books.jpg" alt=""class="shopping">
+                <p>Novels Collections</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="img-styling">
+        <div class="img-styling-container">
+            <div class="img-styling-item">
+                <img src="./image/babyboys.jpg" alt=""class="shopping">
+                <p>Baby babyboys Section</p>
+            </div>
+        </div>
+
+        <div class="img-styling-container">
+            <div class="img-styling-item">
+                <img src="./image/mens.jpg" alt=""class="shopping">
+                <p>Mens Section</p>
+            </div>
+        </div>
+
+        <div class="img-styling-container">
+            <div class="img-styling-item">
+                <img src="./image/gift.jpg" alt=""class="shopping">
+                <p>Gifts Collection</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h1>Chikalo</h1>
+                <pre>
+                Welcome to the Chikalo!!
+                So As this is a shopping website
+                as there are various option for shopping.
+                you can go through the shopping and 
+                visiting our site and making Fun.❤️
+                Currently you can having a discount 
+                by buy one get one free!!😍
+                Exiting !! Right !!
+                </pre>
+            </div>
+            <div class="col">
+                <h1>Collections</h1>
+                <ul>
+                <li><a href ="mens.html">Mens Collections</a></li>
+                <li><a href ="mens.html">Womens Collection</li>
+                <li><a href ="mens.html">Boys Collections</li>
+                <li><a href ="mens.html">Girls Collections</li>
+                <li><a href ="mens.html">Gifts Collections</li>
+                <li><a href ="mens.html">Novels Collections</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>office</h1>
+                <p class="mr">Divya Verma</p>
+                <p class="mr">Mall Road</p>
+                <p class="mr">Nanital,Uttrakhand</p>
+                <p class="email-id">dv73@chikalo.com</p>
+                <p class="ws">www.chikalo.com</p>
+                <h4>+91 - 0123456789</h4>
+            </div>
+            <div class="col">
+                <h1>Newsletter</h1>
+                <form class="for">
+                    <i class="far fa-envelope"></i>
+                    <input type="email"placeholder="Enter your email id"required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyrights">CHIKALO ©2023 All Rights Reserved</p>
+    </footer>
+
+    <script src="./web.js">
+    </script>
+</body>
+</html>
